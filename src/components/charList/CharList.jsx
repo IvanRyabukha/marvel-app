@@ -1,4 +1,6 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
+
 import ErrorMessage from "../errorMessage/ErrorMessage";
 import Spinner from "../spinner/Spinner";
 import MarvelService from "../../services/MarvelService";
@@ -7,6 +9,7 @@ import "./charList.scss";
 
 class CharList extends Component {
   _mountedOnce = false;
+
   state = {
     charList: [],
     loading: true,
@@ -19,7 +22,10 @@ class CharList extends Component {
   marvelService = new MarvelService();
 
   componentDidMount() {
-    this.onRequest();
+    if (!this._mountedOnce) {
+      this._mountedOnce = true;
+      this.onRequest();
+    }
   }
 
   onRequest = (offset) => {
@@ -106,6 +112,10 @@ class CharList extends Component {
       </div>
     );
   }
+}
+
+CharList.propTypes = {
+  onCharSelected: PropTypes.func.isRequired,
 }
 
 export default CharList;
