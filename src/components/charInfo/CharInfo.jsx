@@ -17,13 +17,13 @@ class CharInfo extends Component {
 
   componentDidMount() {
     this.updateChar();
-  }
+  };
 
   componentDidUpdate(prevProps) {
     if (this.props.charId !== prevProps.charId) {
       this.updateChar();
     }
-  }
+  };
 
   updateChar = () => {
     const { charId } = this.props;
