@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5949eff8.css",
-    "main.js": "/static/js/main.180206ee.js",
-    "static/media/vision.png": "/static/media/vision.067d4ae1936d64a577ce.png",
-    "static/media/mjolnir.png": "/static/media/mjolnir.61f31e1809f12183a524.png",
-    "static/media/error.gif": "/static/media/error.42292aa12b6bc303ce99.gif",
-    "index.html": "/index.html",
-    "main.5949eff8.css.map": "/static/css/main.5949eff8.css.map",
-    "main.180206ee.js.map": "/static/js/main.180206ee.js.map"
+    "main.css": "/marvel-app/static/css/main.5949eff8.css",
+    "main.js": "/marvel-app/static/js/main.c084ce0f.js",
+    "static/media/vision.png": "/marvel-app/static/media/vision.067d4ae1936d64a577ce.png",
+    "static/media/mjolnir.png": "/marvel-app/static/media/mjolnir.61f31e1809f12183a524.png",
+    "static/media/error.gif": "/marvel-app/static/media/error.42292aa12b6bc303ce99.gif",
+    "index.html": "/marvel-app/index.html",
+    "main.5949eff8.css.map": "/marvel-app/static/css/main.5949eff8.css.map",
+    "main.c084ce0f.js.map": "/marvel-app/static/js/main.c084ce0f.js.map"
   },
   "entrypoints": [
     "static/css/main.5949eff8.css",
-    "static/js/main.180206ee.js"
+    "static/js/main.c084ce0f.js"
   ]
 }
