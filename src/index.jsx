@@ -1,21 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import App from './components/app/App';
+import App from "./components/app/App";
 
-import './style/style.scss';
+import "./style/style.scss";
 
-// import MarvelService from './services/MarvelService';
+// import useMarvelService from "./services/MarvelService";
 
-// const marvelService = new MarvelService();
+// const TestCall = () => {
+//   const marvelService = useMarvelService();
 
-// marvelService.getCharacter().then(res => console.log(res));
+//   marvelService.getAllComics().then((res) => console.log(res));
+// };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <App />
+  <App />
+  // <TestCall/>
   // <React.StrictMode>
   // </React.StrictMode>
 );
-
-
