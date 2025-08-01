@@ -30,14 +30,14 @@ const ComicsList = () => {
       ended = true;
     }
 
-    setComicsList(comicsList => [...comicsList, ...newComicsList]);
+    setComicsList((comicsList) => [...comicsList, ...newComicsList]);
     setNewItemLoading(false);
-    setOffset(offset => offset + 8);
+    setOffset((offset) => offset + 8);
     setComicsEnded(ended);
   };
 
   function renderItems(arr) {
-    const items = arr.map(item => {
+    const items = arr.map((item) => {
       return (
         <li className="comics__item" key={item.id}>
           <Link to={`/comics/${item.id}`}>
@@ -69,7 +69,7 @@ const ComicsList = () => {
       <button
         className="button button__main button__long"
         disabled={newItemLoading}
-        style={{display: comicsEnded ? 'none' : 'block'}}
+        style={{ display: comicsEnded ? "none" : "block" }}
         onClick={() => onRequest(offset)}
       >
         <div className="inner">load more</div>
