@@ -13,8 +13,7 @@ const AppHeader = () => {
         <ul>
           <li>
             <NavLink
-              end
-              style={({ isActive }) => ({color: isActive? '#9f0013' : 'inherit'})}
+              className={({ isActive }) => isActive ? 'active app__menu-link' : 'app__menu-link'}
               to={'/'}
             >
               Characters
@@ -23,8 +22,7 @@ const AppHeader = () => {
           /
           <li>
             <NavLink
-              end
-              style={({ isActive }) => ({color: isActive? '#9f0013' : 'inherit'})} 
+              className={({ isActive }) => isActive ? 'active app__menu-link' : 'app__menu-link'}
               to={'/comics'}
             >
               Comics
