@@ -10,7 +10,7 @@ import "./style/style.scss";
 // const TestCall = () => {
 //   const marvelService = useMarvelService();
 
-//   marvelService.getComic().then((res) => console.log(res));
+//   marvelService.getCharacterByName('Thor').then((res) => console.log(res));
 // };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
