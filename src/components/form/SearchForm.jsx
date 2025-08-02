@@ -29,7 +29,7 @@ const SearchForm = () => {
                     <Link to={`/characters/${char[0].id}`} className="button button__secondary">
                       <div className="inner">To page</div>
                     </Link>
-                  </div> : 
+                  </div> :
                   <div className="char__search-error">
                     The character was not found. Check the name and try again
                   </div>;
